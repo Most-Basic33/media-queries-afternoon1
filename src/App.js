@@ -14,8 +14,9 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.dropDownView)
     return (
-      <div  className='app'>
+      <div className='app'>
         <header className='main-header'>
           <p className='logo'>Start Bootstrap</p>
           <nav className='menu'>
