@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+span{
+  font-family: fantasy;
+  color: yellow;
+  font-weight: bold;
+  font-size: 40px;
+}
+.menu{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  visibility: hidden;
+}
+.main-header{
+  height: 125px;
+  color: white;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropDown{
+  color: yellow;
+  font-size: 40px;
+  display: initial;
+  cursor: pointer;
+  visibility: hidden;
+}
+.mobil{
+ 
+  display: initial;
+  height: 250px;
+  width: 250px;
+  background-color: bisque;
+  position: fixed;
+  top: 125px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+@media(max-width:750px){
+  .dropDown{
+    visibility: visible;
+  }
+}
+@media(min-width: 750px){
+  .menu{
+    visibility: visible;
+  }
+ 
+
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
