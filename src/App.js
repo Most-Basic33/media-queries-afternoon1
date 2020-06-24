@@ -15,9 +15,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className='app'>
+      <div  className='app'>
         <header className='main-header'>
-          <span>Start Bootstrap</span>
+          <p className='logo'>Start Bootstrap</p>
           <nav className='menu'>
             <span>Services</span>
             <span>Portfolio</span>
@@ -32,7 +32,7 @@ class App extends Component {
                 <span>Services</span>
                 <span>Portfolio</span>
                 <span>About</span>
-                <span>Team</span>
+                <span>Teams</span>
                 <span>Contact</span>
               </nav>
             ) : null}
