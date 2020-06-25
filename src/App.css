@@ -12,9 +12,10 @@ span{
   font-family: fantasy;
   color: yellow;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
 }
-.menu{
+.main_menu{
+  
   display: flex;
       justify-content: space-evenly;
     margin-right:15px ;
@@ -46,12 +47,14 @@ span{
   display: none;
  
 }
-.mobil{
 
-  display: none;
+.menu-mobile{
+  display: initial;
+margin-right: 15px; ;
+position: fixed;
   height: 250px;
   width: 250px;
-  position: fixed;
+  display: flex;
   top: 125px;
   right: 0;
   flex-direction: column;
@@ -59,16 +62,17 @@ span{
 
 }
 
+
 @media(max-width:750px){
   .dropDown{
     margin-right: 45px;
   display:flex;
   }
-  .menu{
+  .main_menu{
 display: none;
   }
-  .mobil{
-    display: initial;
+  .mobil-menu{
+    display: flex;
   }
 }
 

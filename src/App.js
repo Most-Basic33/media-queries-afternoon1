@@ -19,22 +19,23 @@ class App extends Component {
       <div className='app'>
         <header className='main-header'>
           <p className='logo'>Start Bootstrap</p>
-          <nav className='menu'>
-            <span>Services</span>
-            <span>Portfolio</span>
+          <nav className='main_menu'>
+            <span >Services</span>
+            <span >Portfolio</span>
             <span>About</span>
             <span>Team</span>
             <span>Contact</span>
+            
           </nav>
           <div className='dropDown' onClick={this.toggleDropDown}>Menu</div>
           {this.state.dropDownView
             ? (
-              <nav className='mobil'>
-                <span>Services</span>
-                <span>Portfolio</span>
-                <span>About</span>
-                <span>Teams</span>
-                <span>Contact</span>
+              <nav className='menu-mobile'>
+                <span className='span1' >Servicess</span>
+                <span className='span1'>Portfolio</span>
+                <span className='span1'>About</span>
+                <span className='span1'>Teams</span>
+                <span className='span1'>Contacts</span>
               </nav>
             ) : null}
         </header>
